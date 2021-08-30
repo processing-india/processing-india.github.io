@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="opheliagame">
+  <meta name="description" content="PCD India is a community of creative coding enthusiasts, tech artists, designers, live coders, data nerds, musicians, architects, paper engineers and artists whose practices contain these and more elements. We are a group of enthu cutlets who love experimentation and sharing, come hang out!">
+  <meta property="og:image" content="https://pbs.twimg.com/profile_images/1286184924102311937/C2J5e8TX_400x400.jpg">
+  <meta property="og:description" content="PCD India is a community of creative coding enthusiasts, tech artists, designers, live coders, data nerds, musicians, architects, paper engineers and artists whose practices contain these and more elements. We are a group of enthu cutlets who love experimentation and sharing, come hang out!">
+  <meta property="og:title" content="PCD India">
+  <meta property="twitter:description" content="PCD India is a community of creative coding enthusiasts, tech artists, designers, live coders, data nerds, musicians, architects, paper engineers and artists whose practices contain these and more elements. We are a group of enthu cutlets who love experimentation and sharing, come hang out!">
+  <meta property="twitter:title" content="PCD India">
+  <meta property="twitter:creator" content="@anushkatr">
+  <meta name="twitter:site" content="@ProcessingIndia" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/2021/style.css" >
+  <link rel="stylesheet" href="/2021/extra.css" >
+
+  <title>PCD India</title>
+</head>
+<body class="overflow-x-hidden">
+  <canvas id="mouses" class="absolute -z-10 w-screen h-screen"></canvas>
+  <div id="cursor-img" class="invisible w-2 h-2">
+    <picture><source type="image/avif" srcset="/2021/static/img/c70d88b9-24.avif 24w" sizes="(min-width: 30em) 50vw, 100vw"><img style="border-radius: 50%" alt="cursor" loading="lazy" decoding="async" src="/2021/static/img/c70d88b9-24.jpeg" width="24" height="24"></picture>
+  </div>
+
+  <div class="md:container md:mx-auto px-6 md:px-32 z-20">
+    <div class="absolute invisible lg:visible lg:right-16 lg:top-8 lg:w-16 lg:h-12 flex flex-col">
+      <span class="text-xs self-center uppercase">people</span>
+      <label for="people" class="flex-1 flex p-1 items-center cursor-pointer">
+        <!-- toggle -->
+        <div class="relative w-full h-full">
+          <!-- input -->
+          <input type="checkbox" id="people" class="hidden people-toggle" onclick="turnOnPeople(this.checked)" class="sr-only">
+          <!-- line -->
+          <div class="block border-2 border-yellow-200 w-full h-full rounded-full"></div>
+          <!-- dot -->
+          <div class="dot absolute inset-y-0 left-0 bg-yellow-200 w-1/2 p-2 rounded-full transition"></div>
+        </div>
+      </label>
+    </div>
+
+    <div>
+      <header class="flex justify-between lg:justify-center items-center py-8 px-2">
+  
+
+  <a class="text-black no-underline" href="/2021/">
+    <h1 class="text-3xl md:text-4xl lg:text-4xl font-bold uppercase md:tracking-widest">
+      <p class="skew animate-flutter inline-block">P</p>
+      <p class="skew animate-flutter inline-block">C</p>
+      <p class="skew animate-flutter inline-block">D</p>
+      <p class="skew animate-flutter inline-block">&nbsp;</p>
+      <p class="skew animate-flutter inline-block">I</p>
+      <p class="skew animate-flutter inline-block">N</p>
+      <p class="skew animate-flutter inline-block">D</p>
+      <p class="skew animate-flutter inline-block">I</p>
+      <p class="skew animate-flutter inline-block">A</p>
+      <p class="skew animate-flutter inline-block">&nbsp;</p>
+      <p class="skew animate-flutter inline-block">🍰</p>
+    </h1>
+  </a>
+
+  <div class="flex-initial">
+    <div class="visible lg:invisible w-12 h-10 flex flex-col">
+        <span class="text-xxs self-center uppercase">people</span>
+        <label class="flex-1 flex p-0.5 items-center cursor-pointer">
+          <!-- toggle -->
+          <div class="relative w-full h-full">
+            <!-- input -->
+            <input type="checkbox" class="hidden people-toggle" onclick="turnOnPeople(this.checked)" class="sr-only">
+            <!-- line -->
+            <div class="block border-2 border-yellow-200 w-full h-full rounded-full"></div>
+            <!-- dot -->
+            <div class="dot absolute inset-y-0 left-0 bg-yellow-200 w-1/2 rounded-full transition"></div>
+          </div>
+        </label>
+      </div>
+  </div>
+</header>
+
+      
+
+      
+
+<div class="grid grid-cols-5 grid-rows-layout gap-x-0 gap-y-4 justify-center">
+  <div class="flex flex-wrap gap-y-2 py-2 lg:px-24 col-span-full justify-between items-center text-xl">
+  <a class="text-black no-underline matter py-1 px-2 md:py-2 md:px-4 bg-white border-4 md:border-8 border-yellow-200" href="/2021/about">
+    <span>about</span>
+  </a>
+  <a class="text-black no-underline matter py-1 px-2 md:py-2 md:px-4 bg-white border-4 md:border-8 border-yellow-200" href="/2021/schedule">
+    <span>schedule</span>
+  </a>
+  <a class="text-black no-underline matter py-1 px-2 md:py-2 md:px-4 bg-white border-4 md:border-8 border-yellow-200" href="/2021/speakers">
+    <span>speakers</span>
+  </a>
+  <a class="flex-1 md:flex-initial text-black no-underline matter py-1 px-2 md:py-2 md:px-4 bg-white border-4 md:border-8 border-yellow-200" href="/2021/">
+    <span>recap</span>
+  </a>
+</div>
+
+  <div class="col-span-full lg:px-24">
+  
+    <div class="col-span-full shadow rounded p-4" id="formDiv">
+      <form method="post" id="nameForm">
+        <label class="uppercase text-sm" for="name">how shall we call you?</label>
+        <div>
+          <input class="rounded px-2 border-none ring-2 ring-blue-400 focus:outline-none"
+          type="text" name="name" id="name" placeholder="cake-lover" autofocus>
+        </div>
+      </form>
+    </div>
+  
+  
+    <p class="py-4">Processing Community Day (PCD) is a day to celebrate and explore art, code, and diversity around the world.  We define the format of our event in any way that serves our local communities. What does that mean? - aside from the conventional lecture / demo format, our PCD can be a show & tell session, a zine-making session, an audio-visual performance, a DIY art show, a game jam, a group discussion on software art or ALL OF THE ABOVE.</p>
+    <p class="py-4">Processing is a free and open-source software platform for learning how to code within the context of the visual arts, created by Casey Reas and Ben Fry. It is complemented by a web version, called p5.js, created by Lauren McCarthy. To date, Processing and p5.js are used by a worldwide community of artists, coders, educators, students.</p>
+    <p class="py-4">A focus of this project is to make learning how to program and make creative work with code accessible to diverse communities, especially those who might not otherwise have access to these tools and resources. The first Processing Community Day (PCD), organized by Taeyoon Choi and the Processing Foundation in 2017 was one of our efforts to improve diversity within the art and programming community. Taking place at the MIT Media Lab, PCD 2017 drew community members from all over the east coast to get together in person to meet, share what they're working on, to learn, and collaborate.</p>
+    <p class="py-4">Head on over to the <a class="text-blue-400 underline" href="https://processingfoundation.org/advocacy/pcd-2021">processing foundation page</a> to know more and RSVP <a class="text-blue-400 underline" href="https://bit.ly/pcd-india-2021">here</a> 🎉</p>
+    <div class="py-8 text-xxs">cursor made by <a class="text-blue-400 underline" href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a class="text-blue-400 underline" href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+  
+  </div>
+</div>        
+
+
+
+
+    </div>
+  </div>
+  <div class="bg-yellow-200">
+    <div class="md:container md:mx-auto px-8 md:px-32 z-20">
+      <footer class="py-8  bg-yellow-200">
+  <div class="grid grid-cols-3 md:grid-cols-5 grid-rows-2 grid-flow-col">
+    
+    <a href=https://twitter.com/ProcessingIndia class="bg-white p-2 text-center underline text-blue-400">
+      twitter
+    </a>
+    
+    <div></div>
+    <div></div>
+    
+    
+    <a href=https://www.youtube.com/channel/UC6lO25Cn-NVUB4O2LCbYMRw class="bg-white p-2 text-center underline text-blue-400">
+      youtube
+    </a>
+    
+    
+    <a href=https://www.instagram.com/processingindia/ class="bg-white p-2 text-center underline text-blue-400">
+      instagram
+    </a>
+    
+    <div></div>
+    <div></div>
+    
+    
+  </div>
+</footer>
+    </div>
+  </div>
+  
+  
+  
+
+  
+
+  <script src="https://cdn.socket.io/4.1.2/socket.io.min.js" integrity="sha384-toS6mmwu70G0fw54EGlWWeA4z3dyJ+dlXBtSURSKN4vyRFOcxd3Bzjj/AoOwY+Rg" crossorigin="anonymous"></script>
+  <script>
+    console.log('hello from layout')
+    const enterSite = (e) => {
+      e.preventDefault()
+      const name = e.target[0].value
+      socket.emit('new user', name)
+      sessionStorage.setItem('name', name)
+      e.target.parentElement.style.display = 'none'
+      window.addEventListener('mousemove', emitMouse)
+      window.addEventListener('touchmove', emitMouse)
+    }
+
+    const emitMouse = (e) => {
+      const pos = {user: sessionStorage.getItem('name'), x: e.x, y: e.y}
+      socket.emit('user move', pos)
+    }
+
+    const form = document.getElementById('nameForm')
+    if(form) form.addEventListener('submit', enterSite)
+    const formDiv = document.getElementById('formDiv')
+    if(sessionStorage.getItem('name') !== null && formDiv !== null) {
+      formDiv.style.display = 'none'
+    }
+    if(sessionStorage.getItem('name') !== null) {
+      window.addEventListener('mousemove', emitMouse)
+      window.addEventListener('touchmove', emitMouse)
+    }
+
+    const cursorImg = document.querySelector('#cursor-img picture img')
+    cursorImg.addEventListener('load', () => {
+      drawMouses()
+    }, false)
+    
+    const turnOnPeople = (state) => {
+      console.log('setting', state)
+      sessionStorage.setItem('people', state)
+      ctx.clearRect(0, 0, window.innerWidth, window.innerHeight)
+    }
+    const toggle = document.querySelectorAll('.people-toggle') 
+    Array.from(toggle).forEach(input => {
+      if(sessionStorage.getItem('people') === "true") input.checked = true
+      else input.checked = false
+    })
+
+    const drawMouses = () => {
+      console.log('drawing..')
+      ctx.fillStyle = "rgba(255, 255, 255, 0.01)"
+      ctx.fillRect(0, 0, window.innerWidth, window.innerHeight)
+      if (sessionStorage.getItem('people') == false) return
+      Object.keys(userMouses).forEach((user) => {
+        if(user == sessionStorage.getItem('name')) return
+        ctx.fillStyle = '#60A5FA'
+        ctx.font = '14px monospace'
+        const u = userMouses[user]
+        ctx.drawImage(cursorImg, u.x, u.y, 10, 10)
+        ctx.fillText(user, u.x, u.y+20)
+      })
+      
+    }
+  </script>
+  <script>
+    const socket = io('https://pcd-socket-server.herokuapp.com/')
+
+    const userMouses = {}
+
+    const onResize = () => {
+      canvas.width = window.innerWidth
+      canvas.height = window.innerHeight
+    }
+    const usersDiv = document.getElementById('users')
+    const canvas = document.getElementById('mouses')
+    canvas.width = window.innerWidth
+    canvas.height = window.innerHeight
+    canvas.addEventListener('resize', onResize)
+    
+    const ctx = canvas.getContext('2d')
+    socket.on('new user', (user) => {
+      const p = document.createElement('p')
+      p.textContent = user
+     
+    })
+    socket.on('user move', (pos) => {
+      userMouses[pos.user] = {x: pos.x, y: pos.y}
+      if(sessionStorage.getItem('people') === "true") drawMouses()
+    }) 
+  </script>
+        
+</body>
+</html>

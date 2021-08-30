@@ -1,0 +1,33 @@
+.markdown-list li::marker {
+  content: "> ";
+}
+
+.markdown-list li {
+  padding: 0.2rem;
+}
+
+.markdown-list {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+hr {
+  height: 2rem;
+  width: 120%;
+}
+
+p {
+  padding: 0.5rem 0;
+}
+
+img {
+  border: 3px solid #FDE68A;
+}
+
+/* .eleventy-plugin-youtube-embed, .eleventy-plugin-embed-instagram{
+  padding: 1rem 0;
+}
+
+iframe {
+  padding: 1rem 0;
+} */
