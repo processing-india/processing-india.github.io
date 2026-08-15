@@ -4,131 +4,43 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700" rel="stylesheet">
-    <title>Processing Day India</title>
+    <title>Processing Community Day India</title>
     <link rel="stylesheet" href="style.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/p5.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/addons/p5.dom.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/addons/p5.sound.min.js"></script>
   </head>
 
   <body>
-    <!-- <p class="credits">
-      <a class="credits__link" href="https://www.openprocessing.org/sketch/413567"> Sketch </a>
-      by
-      <a class="credits__link" href="https://www.openprocessing.org/user/60876"> Jason Labbe </a>
-    </p> -->
-    <script src="./js/bounce.js"></script>
-    <script src="./js/sketch.js"></script>
-    <div class="title__content">
-      <h1 class="title center"> Processing Community Day </h1>
-      <h2 class="sub-title white center"> India - 2020 </h2>
-      <a class="sub-title white center" href="./2019/index.html"> Click here to see more about PCD 2019 </a>
-      <a class="main__link" href="/">
-        <img src="./images/logo.png" class="logo">
-      </a>
+    <main class="page">
+      <header class="hero">
+        <a class="home-link" href="/">
+          <img src="./images/logo.png" class="logo" alt="Processing India logo">
+        </a>
+        <h1>Processing Community Day India</h1>
+        <p class="tagline">
+          Explore yearly archives and city pages across the repository.
+        </p>
+        <p class="meta-links">
+          <a href="./about.html">About</a>
+          <span>|</span>
+          <a href="./code-of-conduct.html">Code of Conduct</a>
+        </p>
+      </header>
 
-      <p class="para white center">
-          Processing community day India has been created by and for the local communities in India
+      <section class="links-section" aria-label="Site links">
+        <a class="link-card" href="./2019/index.html">2019 Archive</a>
+        <a class="link-card" href="./2020/index.html">2020 Archive</a>
+        <a class="link-card" href="./2021/index.html">2021 Archive</a>
+        <a class="link-card" href="./bangalore/index.html">Bangalore</a>
+        <a class="link-card" href="./delhi/index.html">Delhi</a>
+        <a class="link-card" href="./online/index.html">India Online</a>
+      </section>
+
+      <p class="contact">
+        Follow us:
+        <a href="https://www.instagram.com/processingindia/" target="_blank" rel="noopener noreferrer">@processingindia</a>
+        |
+        Partners:
+        <a href="https://www.instagram.com/ccsantein/" target="_blank" rel="noopener noreferrer">CCSante</a>
       </p>
-    </div>
-    <div class="main-content">
-      <div class="main-sub-content main-red">
-
-        <p class="para left">
-          Processing Community Day (PCD) is a day to celebrate and explore art, code, and diversity around the world. What does that mean? - aside from the conventional lecture / demo format, our PCD can be a show & tell session, a zine-making session, an audio-visual performance, a DIY art show, a game jam, a group discussion on software art or ALL OF THE ABOVE.
-        </p>
-
-        <p class="para">
-          A focus of this project is to make learning how to program and make creative work with code accessible to diverse communities. Here's a snapshot of PCD India from last year
-        </p>
-        <img
-          class="content-image"
-          src="./images/bangalore/pcd1.png"
-          alt="A group picture of the participants of PCD Bangalore — group of people in the center are holding the “Data Selfie” installation"
-        />
-        <p class="para img-caption">
-          A group picture of the participants of PCD Bangalore — group of people in the center are holding the “Data Selfie” installation
-        </p>
-        <img
-          class="content-image"
-          src="./images/bangalore/pcd2.png"
-          alt="Usha Mohanraj presenting her talk “Anyone Can Code: Learning to code at 50”"
-        />
-        <p class="para img-caption">
-            Usha Mohanraj presenting her talk “Anyone Can Code: Learning to code at 50”
-          </p>
-        <img
-          class="content-image"
-          src="./images/bangalore/pcd3.png"
-          alt="Hardik Chandrahas presenting his talk “Storytelling through creative coding”"
-        />
-        <p class="para img-caption">
-            Hardik Chandrahas presenting his talk “Storytelling through creative coding”
-        </p>
-        <img
-          class="content-image"
-          src="./images/bangalore/pcd4.png"
-          alt="Participants in the “ Generative Futures” workshop working on their laptops"
-        />
-        <p class="para img-caption">
-            Participants in the “ Generative Futures” workshop working on their laptops
-        </p>
-
-      </div>
-      <div class="main-sub-content main-lblue">
-        <p class="para">
-          Check out the list of PCD in India in 2020
-        </p>
-        <ul class ="para">
-          <li>
-              <a class=" highlight link center para" href="./online/index.html" target="_blank">
-                India - Online
-              </a>
-          </li>
-          <li>
-              <a class=" highlight link center para" href="./bangalore/index.html" target="_blank">
-                Bangalore
-              </a>
-          </li>
-	  <li>
-              <a class=" highlight link center para" href="./delhi/index.html" target="_blank">
-                Delhi
-              </a>
-          </li>
-	  <li>
-              <a class=" highlight link center para" href="https://auralife.in/creative-coding-workshop/" target="_blank">
-                Chandigarh
-              </a>
-          </li>
-        </ul>
-          <p class="para left">
-              For any questions, email
-              <a
-                class="link highlight"
-                href="mailto:bangalore@processingindia.org"
-                target="_top"
-                >
-                bangalore@processingindia.org
-              </a>
-            </p>
-          <p class="para left">
-              To learn more about Processing Day, check out the global PCD website
-              <a
-                class="link highlight"
-                href="https://day.processing.org/"
-                target="_blank"
-                >
-                global PCD website
-              </a>
-            </p>
-
-            <footer class="footer grey">
-              <span class="bold grey">CODE OF CONDUCT</span>
-              <br>
-              All participants in Processing Community Day (PCD) — including, but not limited to the PCD online forum are required to agree to the following Code of Conduct. This includes all attendees, speakers, performers, workshop leaders, patrons (sponsors), volunteers, and staff. The PCD team is dedicated to providing a harassment-free experience for everyone, regardless of gender, gender identity and expression, sexual orientation, disability, mental illness, neurotype, physical appearance, body, age, race, ethnicity, nationality, language, or religion. We do not tolerate harassment of participants in any form. Anyone participant who violates this Code of Conduct may be sanctioned or expelled from PCD at the discretion of the PCD organizers.
-
-            </footer>
-      </div>
-    </div>
+    </main>
   </body>
 </html>
