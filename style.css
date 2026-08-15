@@ -105,12 +105,24 @@ h1 {
   transition: color 0.15s ease;
 }
 
-.link-card:nth-child(1) { color: #ff6b00; }
-.link-card:nth-child(2) { color: #0077cc; }
-.link-card:nth-child(3) { color: #2d9d36; }
-.link-card:nth-child(4) { color: #d81b60; }
-.link-card:nth-child(5) { color: #6a3df0; }
-.link-card:nth-child(6) { color: #008c72; }
+.link-card:nth-child(1) {
+  color: #ff6b00;
+}
+.link-card:nth-child(2) {
+  color: #0077cc;
+}
+.link-card:nth-child(3) {
+  color: #2d9d36;
+}
+.link-card:nth-child(4) {
+  color: #d81b60;
+}
+.link-card:nth-child(5) {
+  color: #6a3df0;
+}
+.link-card:nth-child(6) {
+  color: #008c72;
+}
 
 .link-card:hover,
 .link-card:focus {
