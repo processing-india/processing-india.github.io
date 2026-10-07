@@ -1,0 +1,306 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700"
+      rel="stylesheet"
+    />
+    <title>Processing Day India</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+      body {
+        position: relative;
+        isolation: isolate;
+        margin: 0;
+        padding: 1.25rem 1rem;
+        color: #202020;
+        background-color: #fff;
+        background-image: url("./images/priyal-1.png");
+        background-position: center top;
+        background-repeat: no-repeat;
+        background-size: 1500px auto;
+        font-family: "Source Sans Pro", sans-serif;
+        line-height: 1.6;
+      }
+
+      body::before {
+        position: absolute;
+        inset: 0;
+        z-index: -1;
+        background: rgb(255 255 255 / 88%);
+        content: "";
+        pointer-events: none;
+      }
+
+      nav {
+        padding-bottom: 2rem;
+      }
+
+      .event-header {
+        position: relative;
+        isolation: isolate;
+        max-width: 64rem;
+        margin: 0 auto;
+        padding: 1rem 0 2.5rem;
+        text-align: center;
+      }
+
+      .event-header::before {
+        position: absolute;
+        inset: 0;
+        z-index: -1;
+        /* background: url("./images/gerleo-nimalan-1.png") center top / 1200px auto no-repeat; */
+        opacity: 0.12;
+        content: "";
+        pointer-events: none;
+      }
+
+      .event-title {
+        margin: 0 0 1.5rem;
+        font-size: 2.25rem;
+        font-weight: 600;
+        line-height: 1.15;
+        text-wrap: balance;
+      }
+
+      .event-title span {
+        display: block;
+        margin-top: 0.5rem;
+      }
+
+      .event-details {
+        margin-bottom: 2rem;
+        font-size: 1.5rem;
+        font-style: italic;
+        line-height: 1.4;
+      }
+
+      .event-content {
+        width: 100%;
+        max-width: 44rem;
+        margin: 0 auto;
+        font-size: 1.125rem;
+      }
+
+      .event-content h2 {
+        font-size: 1.25rem;
+        line-height: 1.4;
+      }
+
+      iframe {
+        display: block;
+        width: 100%;
+        height: auto;
+        border: 0;
+      }
+
+      .venue-map {
+        aspect-ratio: 4 / 3;
+      }
+
+      .community-video {
+        aspect-ratio: 16 / 9;
+      }
+
+      .register-link {
+        display: inline-flex;
+        justify-content: center;
+        max-width: 100%;
+        padding: 0.875rem 1.5rem;
+        border: 1px solid #202020;
+        border-radius: 999px;
+        background: #fff;
+        font-size: 1rem;
+        font-weight: 600;
+        line-height: 1.4;
+        text-align: center;
+        text-transform: uppercase;
+      }
+
+      .register-link:hover {
+        background: #202020;
+        color: #fff;
+      }
+
+      a:focus-visible {
+        outline: 3px solid #202020;
+        outline-offset: 4px;
+      }
+
+      .event-footer {
+        padding: 0 0 2rem;
+        text-align: center;
+      }
+
+      @media (min-width: 640px) {
+        body {
+          padding: 1.5rem 2rem;
+        }
+
+        .event-title {
+          font-size: 3rem;
+        }
+
+        .event-details {
+          font-size: 2rem;
+        }
+
+        .event-content {
+          font-size: 1.25rem;
+        }
+      }
+
+      @media (min-width: 1025px) {
+        body {
+          background-image:
+            url("./images/priyal-1.png"), url("./images/priyal-1.png");
+          background-position:
+            left center,
+            right center;
+          background-size: calc((100vw - 48rem) / 2) auto;
+          background-attachment: fixed;
+        }
+
+        body::before {
+          display: none;
+        }
+
+        .event-header {
+          padding-top: 2rem;
+        }
+
+        .event-title {
+          font-size: 3.75rem;
+        }
+
+        .event-details {
+          font-size: 2.25rem;
+        }
+      }
+
+      @media (min-width: 1440px) {
+        .event-title {
+          font-size: 4.5rem;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav aria-label="Main navigation">
+      <ul class="">
+        <li class="">
+          <a class="underline" href="/">PCD Home</a>
+        </li>
+      </ul>
+    </nav>
+
+    <header class="event-header">
+      <h1 class="event-title">
+        Processing Community Day
+        <span>Bengaluru 2026</span>
+      </h1>
+
+      <div class="event-details">
+        <p><time datetime="2026-10-10">Oct 10th 2026</time></p>
+        <p>NID, Bengaluru</p>
+      </div>
+
+      <a
+        class="register-link"
+        href="https://puttingscene.com/events/HRVFCE"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Register on Putting Scene
+      </a>
+    </header>
+
+    <!-- INTRO -->
+
+    <main class="event-content">
+      <div class="" id="home">
+        <p class="pb-4">
+          Started in 2017, Processing Community Day (PCD) is a global movement
+          that brings together the open-source creative coding community to
+          advance a more collaborative, vibrant, and transformative software
+          culture. The annual PCD is made up of distributed gatherings organized
+          by 50+ regional nodes worldwide.
+        </p>
+
+        <p class="pb-12">
+          At Processing Community India, we mark this as a day to celebrate and
+          explore art, code, and diversity around the world. Join us this year
+          for fun talks, workshops, projects and more!
+        </p>
+
+        <!-- Event schedule -->
+
+        <div class="pb-12">
+          <h2 class="text-xl italic underline pb-4">Event Schedule</h2>
+          <p>Coming soon!</p>
+        </div>
+
+        <div class="pb-12">
+          <h2 class="text-xl italic underline pb-4">Venue</h2>
+          <iframe
+            class="venue-map"
+            title="National Institute of Design, Bengaluru location"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.0146521293173!2d77.53244857527153!3d13.034738813490435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae3d3e5e61cd07%3A0x12c7069b81b644f1!2sNational%20Institute%20of%20Design%2C%20Bengaluru!5e0!3m2!1sen!2sjp!4v1791386283217!5m2!1sen!2sjp"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="strict-origin-when-cross-origin"
+          ></iframe>
+        </div>
+      </div>
+
+      <div class="pb-12">
+        <h2 class="pb-2">other creative coding communities in Bengaluru</h2>
+        <p class="text-sm pb-4">
+          CCSantè - Creative Coding Santè - is a monthly meetup that has been
+          run in person in Bengaluru, as well as online for the last 3 years.
+        </p>
+        <iframe
+          class="community-video"
+          loading="lazy"
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/TJZ2EoDVi_s?si=3vtvp4yn-tanEc6Q"
+          title="YouTube video player"
+          frameborder="0"
+          allow="
+            accelerometer;
+            autoplay;
+            clipboard-write;
+            encrypted-media;
+            gyroscope;
+            picture-in-picture;
+            web-share;
+          "
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </main>
+
+    <footer class="event-footer">
+      <h2 class="pb-6 text-xl text-center italic lowercase">
+        🪻 Hope to see you there 🪻
+      </h2>
+
+      <a
+        class="register-link"
+        href="https://puttingscene.com/events/HRVFCE"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Register on Putting Scene
+      </a>
+    </footer>
+  </body>
+</html>
